@@ -15,3 +15,13 @@ state 를 통체로 <strong><u>""대체""</u></strong>
 
 dispatch 는 한가지의 인자를 가질 수 있음
 그런데 여러가지 정보를 보내야할때가 있는데 그럴때는를 대비하기 위해 obj 형으로 사용함
+
+# Make Todo
+
+<strong>state 는 항상 대체하는 것임을 명심 </strong>
+
+## Array Control
+
+배열을 항상 직접 수정하는 것이 아닌 새로운 것을 만들어서 조작한 뒤에 쓰는것이 좋은 접근
+
+<strong>filter 를 사용해 삭제할 id 가 아닌 아이들만 리턴함으로서 삭제할 id 를 가지고있는 아이는 리턴하지 않아 삭제된 배열을 state 로 대체!</strong>
