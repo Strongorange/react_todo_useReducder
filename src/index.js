@@ -1,10 +1,25 @@
+// import React from "react";
+// import ReactDOM from "react-dom";
+// import App from "./Components/App";
+// import ToDosProvider from "./context";
+
+// ReactDOM.render(
+//   <React.StrictMode>
+//     <ToDosProvider>
+//       <App />
+//     </ToDosProvider>
+//   </React.StrictMode>,
+//   document.getElementById("root")
+// );
+
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./App";
+import App from "./Components/App";
+import ToDosProvider from "./context";
 
 ReactDOM.render(
-  <React.StrictMode>
+  <ToDosProvider>
     <App />
-  </React.StrictMode>,
+  </ToDosProvider>,
   document.getElementById("root")
 );
