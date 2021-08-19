@@ -1,12 +1,12 @@
 import { v4 as uuid } from "uuid";
 import { ADD, DEL, COMPLETE, UNCOMPLETE } from "./actions";
 
-export const initialState = {
+export const initialState2 = {
   toDos: [],
   completed: [],
 };
 
-const reducer = (state, action) => {
+const reducer2 = (state, action) => {
   switch (action.type) {
     case ADD:
       return {
@@ -16,7 +16,7 @@ const reducer = (state, action) => {
     case DEL:
       return {
         ...state,
-        toDos: state.toDos.filter((toDo) => toDo.id !== action.payload), // payload 로 전달된 toDo.id 와 다른 요소들만 리턴해 해당 id 를 제거한 새로운 배열로 state 를 대체
+        toDos: state.toDos.filter((toDo) => toDo.id !== action.payload),
         completed: state.completed.filter((toDo) => toDo.id !== action.payload),
       };
     case COMPLETE:
@@ -40,4 +40,4 @@ const reducer = (state, action) => {
   }
 };
 
-export default reducer;
+export default reducer2;
