@@ -100,3 +100,5 @@ reducer 에서 completed 의 정보를 주지 않았기 때문에 오류 발생 
     <li>Find 배열의 각각 요소에 실행되며 true 가 되는 요소를 리턴함
     <li>Filter 배열의 각각 요소에 실행되며 <b><u> true 가 되는 요소들의 새로운 배열을 리턴함</u></b>
 </ul>
+
+# Edit Function 추가 해야될 듯
